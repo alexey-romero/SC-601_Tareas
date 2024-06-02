@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Alexey's 1st Assignment";
+}
+
+@* <!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html> *@
+
+@model IEnumerable<AlexeyRomero_Tarea1_PrograAvanzada.Models.Employee>
+
+<h1>Employee Directory</h1>
+
+<div class="text-center">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <td>Last Name</td>
+        </tr>
+    </table>
+    @if (Model != null)
+    {
+        @foreach (var entity in Model)
+        {
+            <tr>
+                <td>@entity.Id</td>
+                <td>@entity.FirstName</td>
+                <td>@entity.LastName</td>
+            </tr>
+        }
+    } 
+</div>
