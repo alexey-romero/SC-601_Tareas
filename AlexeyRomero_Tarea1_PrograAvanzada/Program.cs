@@ -11,7 +11,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
+builder.Services.AddTransient<DatabaseConnTester>();
+
 var app = builder.Build();
+
+//using (var scope = app.Services.CreateScope())
+//{
+//    var dbTester = scope.ServiceProvider.GetRequiredService<DatabaseConnTester>();
+//    dbTester.TestConnection();
+//}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -31,5 +39,10 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "employees",
+    pattern: "Home/Employees",
+    defaults: new { controller = "Home", action = "Employees" });
 
 app.Run();
