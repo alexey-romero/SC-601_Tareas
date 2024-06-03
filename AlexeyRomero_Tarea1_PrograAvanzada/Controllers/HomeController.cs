@@ -1,3 +1,5 @@
+using AlexeyRomero_Tarea1_PrograAvanzada.Models;
+
 namespace AlexeyRomero_Tarea1_PrograAvanzada.Controllers
 {
     public class HomeController : Controller
@@ -23,17 +25,18 @@ namespace AlexeyRomero_Tarea1_PrograAvanzada.Controllers
 
         public IActionResult Employees()
         {
-            var employees = _context.Employees.Take(10).ToList();
-            foreach (var employee in employees)
-            {
-                Debug.WriteLine($"ID: {employee.Id}, First Name: {employee.FirstName}, Last Name: {employee.LastName}");
-            }
+            var employees = _context.Employees.Take(30).ToList();
             return View(employees);
         }
 
         public IActionResult Departments()
         {
-            return View();
+            var departments = _context.Departments.Take(30).ToList();
+            foreach (var department in departments)
+            {
+                Debug.WriteLine($"ID: {department.Id}, Dept Name: {department.DepartmentName}");
+            }
+            return View(departments);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -11,7 +11,7 @@
 
         public IActionResult Index()
         {
-            var employees = _context.Employees.Take(10).ToList();
+            var employees = _context.Employees.Take(100).ToList();
             return View(employees);
         }
     }
