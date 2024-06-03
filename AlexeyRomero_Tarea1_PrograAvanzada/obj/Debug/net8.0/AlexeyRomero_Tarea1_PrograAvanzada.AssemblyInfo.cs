@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlexeyRomero_Tarea1_PrograAvanzada")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7595c10c4c7f643ea1dea0601f32df0b7973803c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlexeyRomero_Tarea1_PrograAvanzada")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlexeyRomero_Tarea1_PrograAvanzada")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

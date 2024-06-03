@@ -6383,11 +6383,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\ProyectosPrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada.csproj",
+      "projectUniqueName": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\SC601-2Q-2024\\SC-601_Tareas\\AlexeyRomero_Tarea1_PrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada.csproj",
       "projectName": "AlexeyRomero_Tarea1_PrograAvanzada",
-      "projectPath": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\ProyectosPrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada.csproj",
+      "projectPath": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\SC601-2Q-2024\\SC-601_Tareas\\AlexeyRomero_Tarea1_PrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada.csproj",
       "packagesPath": "C:\\Users\\alexe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\ProyectosPrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada\\obj\\",
+      "outputPath": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\SC601-2Q-2024\\SC-601_Tareas\\AlexeyRomero_Tarea1_PrograAvanzada\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexe\\AppData\\Roaming\\NuGet\\NuGet.Config",

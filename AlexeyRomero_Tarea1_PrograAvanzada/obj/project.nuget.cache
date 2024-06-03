@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7xp8O+Y5evg=",
+  "dgSpecHash": "I5QW3CoKI70=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\ProyectosPrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada.csproj",
+  "projectFilePath": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\SC601-2Q-2024\\SC-601_Tareas\\AlexeyRomero_Tarea1_PrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexe\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\alexe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
