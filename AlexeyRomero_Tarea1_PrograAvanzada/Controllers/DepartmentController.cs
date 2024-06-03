@@ -11,9 +11,10 @@ namespace AlexeyRomero_Tarea1_PrograAvanzada.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Departments()
         {
-            return View();
+            var departments = _context.Departments.ToList();
+            return View(departments);
         }
     }
 }
