@@ -461,3 +461,6 @@ C:\Users\alexe\Documents\Universidad - Repositorios\SC601-2Q-2024\SC-601_Tareas\
 C:\Users\alexe\Documents\Universidad - Repositorios\SC601-2Q-2024\SC-601_Tareas\AlexeyRomero_Tarea1_PrograAvanzada\obj\Debug\net8.0\AlexeyRomero_Tarea1_PrograAvanzada.pdb
 C:\Users\alexe\Documents\Universidad - Repositorios\SC601-2Q-2024\SC-601_Tareas\AlexeyRomero_Tarea1_PrograAvanzada\obj\Debug\net8.0\AlexeyRomero_Tarea1_PrograAvanzada.genruntimeconfig.cache
 C:\Users\alexe\Documents\Universidad - Repositorios\SC601-2Q-2024\SC-601_Tareas\AlexeyRomero_Tarea1_PrograAvanzada\obj\Debug\net8.0\ref\AlexeyRomero_Tarea1_PrograAvanzada.dll
+C:\Users\alexe\Documents\Universidad - Repositorios\SC601-2Q-2024\SC-601_Tareas\AlexeyRomero_Tarea1_PrograAvanzada\bin\Debug\net8.0\X.PagedList.dll
+C:\Users\alexe\Documents\Universidad - Repositorios\SC601-2Q-2024\SC-601_Tareas\AlexeyRomero_Tarea1_PrograAvanzada\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+C:\Users\alexe\Documents\Universidad - Repositorios\SC601-2Q-2024\SC-601_Tareas\AlexeyRomero_Tarea1_PrograAvanzada\obj\Debug\net8.0\AlexeyRomero_Tarea1_PrograAvanzada.MvcApplicationPartsAssemblyInfo.cs

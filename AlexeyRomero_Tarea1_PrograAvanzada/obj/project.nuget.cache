@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "I5QW3CoKI70=",
+  "dgSpecHash": "6AmZ5WOJgf0=",
   "success": true,
   "projectFilePath": "C:\\Users\\alexe\\Documents\\Universidad - Repositorios\\SC601-2Q-2024\\SC-601_Tareas\\AlexeyRomero_Tarea1_PrograAvanzada\\AlexeyRomero_Tarea1_PrograAvanzada.csproj",
   "expectedPackageFiles": [
@@ -134,7 +134,9 @@
     "C:\\Users\\alexe\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\alexe\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\alexe\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
-    "C:\\Users\\alexe\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+    "C:\\Users\\alexe\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\alexe\\.nuget\\packages\\x.pagedlist\\9.1.2\\x.pagedlist.9.1.2.nupkg.sha512",
+    "C:\\Users\\alexe\\.nuget\\packages\\x.pagedlist.mvc.core\\9.1.2\\x.pagedlist.mvc.core.9.1.2.nupkg.sha512"
   ],
   "logs": []
 }

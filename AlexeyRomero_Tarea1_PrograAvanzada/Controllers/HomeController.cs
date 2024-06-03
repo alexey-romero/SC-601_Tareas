@@ -23,19 +23,18 @@ namespace AlexeyRomero_Tarea1_PrograAvanzada.Controllers
             return View();
         }
 
-        public IActionResult Employees()
+        public IActionResult Employees(int? page)
         {
-            var employees = _context.Employees.Take(30).ToList();
+            int pageSize = 10; // Number of records per page
+            int pageNumber = page ?? 1; // Default to page 1 if no page is specified
+
+            var employees = _context.Employees.OrderBy(e => e.Id).ToPagedList(pageNumber, pageSize);
             return View(employees);
         }
 
         public IActionResult Departments()
         {
-            var departments = _context.Departments.Take(30).ToList();
-            foreach (var department in departments)
-            {
-                Debug.WriteLine($"ID: {department.Id}, Dept Name: {department.DepartmentName}");
-            }
+            var departments = _context.Departments.ToList();
             return View(departments);
         }
 
