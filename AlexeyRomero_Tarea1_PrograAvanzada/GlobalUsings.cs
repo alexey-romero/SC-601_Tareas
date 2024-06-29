@@ -7,3 +7,4 @@ global using System.Linq;
 global using System.ComponentModel.DataAnnotations.Schema;
 global using Microsoft.EntityFrameworkCore;
 global using X.PagedList;
+global using Microsoft.Extensions.DependencyInjection;

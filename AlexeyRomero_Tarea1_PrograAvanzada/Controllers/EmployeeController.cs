@@ -12,6 +12,10 @@
         public IActionResult Index()
         {
             var employees = _context.Employees.Take(100).ToList();
+            foreach (var employee in employees)
+            {
+                Console.WriteLine("Full name: " + employee.FirstName + " " + employee.LastName);
+            }
             return View(employees);
         }
     }

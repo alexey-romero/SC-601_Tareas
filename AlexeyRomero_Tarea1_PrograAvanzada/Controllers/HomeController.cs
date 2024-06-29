@@ -29,6 +29,10 @@ namespace AlexeyRomero_Tarea1_PrograAvanzada.Controllers
             int pageNumber = page ?? 1; // Default to page 1 if no page is specified
 
             var employees = _context.Employees.OrderBy(e => e.Id).ToPagedList(pageNumber, pageSize);
+            foreach (var employee in employees)
+            {
+                Console.WriteLine("Full name: " + employee.FirstName + " " + employee.LastName);
+            }
             return View(employees);
         }
 
