@@ -17,16 +17,16 @@ namespace AP.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllUsers()
+        public async Task<IActionResult> GetAllUsers()
         {
-            var users = _userService.GetAllUsers();
+            var users = await _userService.GetAllUsers();
             return Ok(users);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetUserById(int id)
+        public async Task<IActionResult> GetUserById(int id)
         {
-            var user = _userService.GetUserById(id);
+            var user = await _userService.GetUserById(id);
             if (user == null)
             {
                 return NotFound();
@@ -35,29 +35,29 @@ namespace AP.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddUser([FromBody] User user)
+        public async Task<IActionResult> CreateUser([FromBody] User user)
         {
             user.CreatedAt = DateTime.UtcNow.AddHours(-6);
-            _userService.CreateUser(user);
+            await _userService.CreateUser(user);
             return CreatedAtAction(nameof(GetUserById), new { id = user.UserId }, user);
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateUser(int id, User user)
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
         {
             if (id != user.UserId)
             {
                 return BadRequest();
             }
 
-            _userService.UpdateUser(user);
+            await _userService.UpdateUser(user);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteUser(int id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
-            _userService.DeleteUser(id);
+            await _userService.DeleteUser(id);
             return NoContent();
         }
     }

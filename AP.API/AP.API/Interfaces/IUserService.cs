@@ -4,11 +4,16 @@ namespace AP.API.Interfaces
 {
     public interface IUserService
     {
-        IEnumerable<User> GetAllUsers();
-        User GetUserById(int id);
-        void CreateUser(User user);
-        void UpdateUser(User user);
-        void DeleteUser(int id);
-    }
+        //Task<IEnumerable<User>> GetAllUsers();
+        //User GetUserById(int id);
+        //void CreateUser(User user);
+        //void UpdateUser(User user);
+        //void DeleteUser(int id);
 
+        Task<IEnumerable<User>> GetAllUsers();
+        Task<User> GetUserById(int id);
+        Task CreateUser(User user);
+        Task UpdateUser(User user);
+        Task DeleteUser(int id);
+    }
 }
