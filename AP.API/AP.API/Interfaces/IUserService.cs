@@ -15,5 +15,6 @@ namespace AP.API.Interfaces
         Task CreateUser(User user);
         Task UpdateUser(User user);
         Task DeleteUser(int id);
+        Task<User> GetUserAddresses(int userId);
     }
 }

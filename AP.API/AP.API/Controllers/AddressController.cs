@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AP.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/addresses")]
     [ApiController]
     public class DefaultController : ControllerBase
     {

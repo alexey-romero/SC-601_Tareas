@@ -16,32 +16,32 @@ namespace AP.API.Services
 
         public async Task<IEnumerable<User>> GetAllUsers()
         {
-            // Business logic can be added here
             return await _userRepository.GetAllObjectsAsync();
         }
 
         public async Task<User> GetUserById(int id)
         {
-            // Business logic can be added here
             return await _userRepository.GetObjectByIdAsync(id);
         }
 
         public async Task CreateUser(User user)
         {
-            // Business logic can be added here, such as validation
             await _userRepository.CreateObjectAsync(user);
         }
 
         public async Task UpdateUser(User user)
         {
-            // Business logic can be added here, such as validation
             await _userRepository.UpdateObjectAsync(user);
         }
 
         public async Task DeleteUser(int id)
         {
-            // Business logic can be added here, such as checking dependencies
             await _userRepository.DeleteObjectAsync(id);
+        }
+
+        public async Task<User> GetUserAddresses(int userId)
+        {
+            return await _userRepository.GetUserAddresses(userId);
         }
     }
 }

@@ -4,6 +4,7 @@ namespace AP.Data.Interfaces
 {
     public interface IUserRepository : IRepository<User>
     {
-        // TODO: User specific methods
+        //public int AssignRandomFavoriteNumber (int userId);
+        Task<User> GetUserAddresses(int userId);
     }
 }

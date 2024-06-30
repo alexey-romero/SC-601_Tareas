@@ -60,5 +60,16 @@ namespace AP.API.Controllers
             await _userService.DeleteUser(id);
             return NoContent();
         }
+
+        [HttpGet("{id}/addresses")]
+        public async Task<IActionResult> GetUserAddresses(int id)
+        {
+            var user = await _userService.GetUserAddresses(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
+        }
     }
 }
