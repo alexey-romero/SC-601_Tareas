@@ -14,34 +14,29 @@ namespace AP.API.Services
             _userRepository = userRepository;
         }
 
-        public IEnumerable<User> GetAllUsers()
+        public async Task<IEnumerable<User>> GetAllUsers()
         {
-            // Business logic can be added here
-            return _userRepository.GetAllUsers();
+            return await _userRepository.GetAllObjects();
         }
 
-        public User GetUserById(int id)
+        public async Task<User> GetUserById(int id)
         {
-            // Business logic can be added here
-            return _userRepository.GetUserById(id);
+            return await _userRepository.GetObjectById(id);
         }
 
-        public void CreateUser(User user)
+        public async Task CreateUser(User user)
         {
-            // Business logic can be added here, such as validation
-            _userRepository.CreateUser(user);
+            await _userRepository.CreateObject(user);
         }
 
-        public void UpdateUser(User user)
+        public async Task UpdateUser(User user)
         {
-            // Business logic can be added here, such as validation
-            _userRepository.UpdateUser(user);
+            await _userRepository.UpdateObject(user);
         }
 
-        public void DeleteUser(int id)
+        public async Task DeleteUser(int id)
         {
-            // Business logic can be added here, such as checking dependencies
-            _userRepository.DeleteUser(id);
+            await _userRepository.DeleteObject(id);
         }
     }
 }

@@ -19,13 +19,7 @@ public partial class AppDbContext : DbContext
     {
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__user__B9BE370F252B5F0B");
-
             entity.ToTable("user");
-
-            entity.HasIndex(e => e.Email, "UQ__user__AB6E6164370A04BB").IsUnique();
-
-            entity.HasIndex(e => e.Username, "UQ__user__F3DBC572BFEF5BB5").IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("user_id");
             entity.Property(e => e.CreatedAt)
